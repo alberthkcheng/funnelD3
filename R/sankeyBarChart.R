@@ -1,10 +1,14 @@
 #' Create a D3 JavaScript Sankey diagram
 #'
+#' @example data <- data.frame(label=c("step 1","step 2","step 3","step 4"),
+#'                              value=c(1000,600,400,100))
+#'          sankeyBarChart(data)
+#'
 #' @import htmlwidgets
 #' @export
 sankeyBarChart <- function(data){
 
-  options <- list(style = "origin")
+  options <- list(height = 150)
 
   x <- list(data=data,options=options)
 

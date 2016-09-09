@@ -1,9 +1,23 @@
 dependencies:
-  - name: d3
-    version: 4.2.2
-    src: "htmlwidgets/lib/d3-4.2.2"
-    script: d3.min.js
-  - name: sankeyBarChart
+  - name: sankey-barchart
     version: 1.0
-    src: "htmlwidgets/lib/sankeyBarChart"
-    stylesheet: sankeyBarChart.css
+    src: "htmlwidgets/lib/sankey-barchart"
+    script: sankey-barchart.js
+    all_files: TRUE
+    head: "<link rel='stylesheet/less' type='text/css' href='lib/sankey-barchart-1/sankey-barchart.less' />"
+  - name: d3
+    version: 3.5.2
+    src: "htmlwidgets/lib/d3-3.5.2"
+    script: d3.min.js
+  - name: jquery
+    version: 3.1.0
+    src: "htmlwidgets/lib/jquery-3.1.0"
+    script: jquery-3.1.0.min.js
+  - name: underscore
+    version: 1.8.3
+    src: "htmlwidgets/lib/underscore-1.8.3"
+    script: underscore-min.js
+  - name: less
+    version: 2.7.1
+    src: "htmlwidgets/lib/less-2.7.1"
+    script: less.min.js
