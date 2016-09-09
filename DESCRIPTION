@@ -1,9 +1,16 @@
 Package: funnelD3
 Type: Package
-Title: What the Package Does (Title Case)
+Title: D3 JavaScript Funnel Plots for R
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Authors@R: person("Albert", "Cheng", email = "albert.hk.cheng@gmail.com",
+  role = c("aut", "cre"))
+Description: Contains the plot type used for plotting funnel.
+License: GPL (>= 3)
 LazyData: TRUE
+Depends:
+    R (>= 3.0.0)
+Imports:
+    htmlwidgets (>= 0.6.0)
+Suggests:
+    testthat
+RoxygenNote: 5.0.1
