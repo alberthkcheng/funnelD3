@@ -3,8 +3,7 @@ dependencies:
     version: 1.0
     src: "htmlwidgets/lib/sankey-barchart"
     script: sankey-barchart.js
-    all_files: TRUE
-    head: "<link rel='stylesheet/less' type='text/css' href='lib/sankey-barchart-1/sankey-barchart.less' />"
+    style: sankey-barchart.css
   - name: d3
     version: 3.5.2
     src: "htmlwidgets/lib/d3-3.5.2"
@@ -17,7 +16,3 @@ dependencies:
     version: 1.8.3
     src: "htmlwidgets/lib/underscore-1.8.3"
     script: underscore-min.js
-  - name: less
-    version: 2.7.1
-    src: "htmlwidgets/lib/less-2.7.1"
-    script: less.min.js

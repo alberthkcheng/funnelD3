@@ -24,7 +24,7 @@ var SankeyBarchart = function() {
 
     // container for exposure to the outside world
     var self = {};
-		
+
     // core rendering logic which is invoked as the window is resized
     // or when the viz is first loaded
     self.render = function(domId, dataset, options) {
@@ -103,7 +103,7 @@ var SankeyBarchart = function() {
                 return (w - me).toFixed(0) + 'px';
             }
         };
-				console.log(domId)
+
         // ===============================
         // BARCHART HEADER
         // ===============================
