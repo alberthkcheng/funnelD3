@@ -6,10 +6,11 @@
 #'        value - contain the value of the steps
 #'
 #' @examples
-#'        data <- data.frame(label=c("step 1","step 2","step 3","step 4"),
-#'                              value=c(1000,600,400,100))
-#'        sankeyBarChart(data)
-#'
+#' \dontrun{
+#'    data <- data.frame(label=c("step 1","step 2","step 3","step 4"),
+#'                       value=c(1000,600,400,100))
+#'    sankeyBarChart(data)
+#' }
 #' @export
 
 sankeyBarChart <- function(data){
