@@ -3,5 +3,6 @@
 export(renderSankeyBarChart)
 export(sankeyBarChart)
 export(sankeyBarChartOutput)
+export(saveFunnel)
 importFrom(htmlwidgets,shinyRenderWidget)
 importFrom(htmlwidgets,shinyWidgetOutput)
