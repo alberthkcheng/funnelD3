@@ -15,8 +15,9 @@ HTMLWidgets.widget({
         sankeybar.render(dataset, options);
       },
       resize: function(width, height) {
-        sankeybar.resize();
-      }
+        sankeybar.resize(width, height);
+      },
+      sankey: sankeybar
     };
   }
 });

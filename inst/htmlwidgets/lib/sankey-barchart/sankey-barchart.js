@@ -86,8 +86,8 @@ SankeyBarchart.prototype.render = function(dataset, options) {
     // height and width, width is always assumed to be
     // the width of the container to elastically and responsively
     // scale to the device width and screen width
-    var w = $(domId).width();
-    var h = options.height || $(domId).height();
+    var w = this.width;
+    var h = options.height || this.height;
 
     // ranges/gaps/padding along x
     var xaxis_range_gap = d3.scale
@@ -333,8 +333,10 @@ SankeyBarchart.prototype.render = function(dataset, options) {
         .style("opacity", options.sankey.opacity);
 };
 
-SankeyBarchart.prototype.resize = function() {
+SankeyBarchart.prototype.resize = function(width, height) {
+    this.width = width;
+    this.height = height;
     var domId = this.id;
-    $(domId).html('');
+    d3.select(domId).html('');
     this.render(this.dataset, this.options);
 };
