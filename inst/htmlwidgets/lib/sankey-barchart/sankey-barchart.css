@@ -2,6 +2,12 @@
   overflow: hidden;
   font: 12px 'Arial', sans-serif;
 }
+.sankeyBarChart * {
+  /* Fix interfere from bootstrap in shiny */
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
 .sankeyBarChart svg {
   font: 12px 'Arial', sans-serif;
   z-index: 99;
