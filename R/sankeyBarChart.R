@@ -4,6 +4,10 @@
 #'
 #' @param data A data frame with two column: label - contains the name of steps,
 #'        value - contain the value of the steps
+#' @param width width for the plot (If \code{NULL} then height is automatically
+#'        determined based on context, allowing reactivity)
+#' @param height height for the plot (if \code{NULL} then width is automatically
+#'        determined based on context.)
 #'
 #' @examples
 #' \dontrun{
@@ -13,17 +17,15 @@
 #' }
 #' @export
 
-sankeyBarChart <- function(data){
+sankeyBarChart <- function(data, height = NULL, width = NULL){
 
-  options <- list()
+  options <- list() # For future use
 
   x <- list(data = data, options = options)
 
   htmlwidgets::createWidget("sankeyBarChart", x, package = "funnelD3",
-                            width = NULL, height=NULL,
-                            htmlwidgets::sizingPolicy(defaultWidth=800,
-                                                      defaultHeight=600,
-                                                      padding = 10,
+                            width = NULL, height = NULL,
+                            htmlwidgets::sizingPolicy(padding = 10,
                                                       browser.fill = TRUE))
 
 }

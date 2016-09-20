@@ -4,11 +4,17 @@
 \alias{sankeyBarChart}
 \title{Create a D3 JavaScript Sankey Barchart}
 \usage{
-sankeyBarChart(data)
+sankeyBarChart(data, height = NULL, width = NULL)
 }
 \arguments{
 \item{data}{A data frame with two column: label - contains the name of steps,
 value - contain the value of the steps}
+
+\item{height}{height for the plot (if \code{NULL} then width is automatically
+determined based on context.)}
+
+\item{width}{width for the plot (If \code{NULL} then height is automatically
+determined based on context, allowing reactivity)}
 }
 \description{
 To create a google-analytics-like sankey barchart.

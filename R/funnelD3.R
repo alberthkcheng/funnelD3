@@ -1,3 +1,15 @@
+#'
+#' Creating Interactive Funnel Plot from R
+#'
+#' Creates D3JS sankey barplot
+#'
+#' @name funnelD3-package
+#' @aliases funnelD3
+#' @docType package
+NULL
+
+
+
 #' Shiny bindings for funnelD3 widgets
 #'
 #' #' Output and render functions for using funnelD3 widgets within Shiny
@@ -14,5 +26,6 @@
 #'
 #' @importFrom htmlwidgets shinyWidgetOutput
 #' @importFrom htmlwidgets shinyRenderWidget
+#'
 #' @name funnelD3-shiny
 NULL
