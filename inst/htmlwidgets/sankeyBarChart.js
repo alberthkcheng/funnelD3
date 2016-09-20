@@ -6,13 +6,13 @@ HTMLWidgets.widget({
 
   factory: function(el, width, height) {
 
-    var sankeybar = new SankeyBarchart();
+    var sankeybar = new SankeyBarchart(el, width, height);
     return {
       renderValue: function(x){
         var temp = HTMLWidgets.dataframeToD3(x.data);
         dataset = _.map(temp, function(obj){ return {enter:obj, exit:{label:obj.label+" Exit"}}});
         var options = x.options;
-        sankeybar.render("#"+el.id, dataset, options);
+        sankeybar.render(dataset, options);
       },
       resize: function(el, width, height) {
         //Do Nothing
