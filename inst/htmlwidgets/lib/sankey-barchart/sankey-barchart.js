@@ -24,12 +24,16 @@ var SankeyBarchart = function(el, width, height) {
     this.id = '#' + el.id;
     this.width = width;
     this.height = height;
+    this.dataset = {};
+    this.options = {};
 };
 
 // core rendering logic which is invoked as the window is resized
 // or when the viz is first loaded
 SankeyBarchart.prototype.render = function(dataset, options) {
 
+    this.dataset = dataset;
+    this.options = options;
     var domId = this.id;
 
     // calculate abandonment rate per step to show the user in header/footer
@@ -327,4 +331,10 @@ SankeyBarchart.prototype.render = function(dataset, options) {
         })
         .style("fill", options.sankey.color)
         .style("opacity", options.sankey.opacity);
+};
+
+SankeyBarchart.prototype.resize = function() {
+    var domId = this.id;
+    $(domId).html('');
+    this.render(this.dataset, this.options);
 };

@@ -15,11 +15,16 @@
 
 sankeyBarChart <- function(data){
 
-  options <- list(height = 150)
+  options <- list()
 
   x <- list(data = data, options = options)
 
-  htmlwidgets::createWidget("sankeyBarChart", x, package = "funnelD3")
+  htmlwidgets::createWidget("sankeyBarChart", x, package = "funnelD3",
+                            width = NULL, height=NULL,
+                            htmlwidgets::sizingPolicy(defaultWidth=800,
+                                                      defaultHeight=600,
+                                                      padding = 10,
+                                                      browser.fill = TRUE))
 
 }
 
