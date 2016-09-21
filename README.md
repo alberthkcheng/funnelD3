@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/alberthkcheng/funnelD3.svg?branch=master)](https://travis-ci.org/alberthkcheng/funnelD3)
+[![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/funnelD3)](https://cran.r-project.org/package=funnelD3)
+[![CRAN version](http://www.r-pkg.org/badges/version/funnelD3)](https://cran.r-project.org/package=funnelD3)
 
 # funnelD3
 D3 JavaScript funnel plots for R 
